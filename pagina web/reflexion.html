@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Integra lo aprendido y escribe un compromiso personal con tu identidad y proyecto de vida.">
+  <title>Mi reflexión | Core 1</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Core 1, inicio"><span class="brand-mark" aria-hidden="true">C1</span><span><strong>CORE 1</strong><small>PERSONA Y AUTOCONOCIMIENTO</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="juego.html">Recorrido</a><a href="reflexion.html">Mi reflexión</a><a href="recursos.html">Recursos</a></nav>
+  </header>
+  <main id="contenido" class="page-main">
+    <section class="page-intro reflection-intro">
+      <p class="eyebrow eyebrow-dark">UN CIERRE QUE TAMBIÉN ES COMIENZO</p>
+      <h1>Lo que descubres también <span>lo puedes elegir.</span></h1>
+      <p>Integra las ocho miradas en una historia propia. No hay respuestas perfectas: escribe lo que hoy sea verdadero para ti.</p>
+    </section>
+    <section class="section reflection-section">
+      <div class="section-heading"><p class="eyebrow eyebrow-dark">EL ROMPECABEZAS DE LA IDENTIDAD</p><h2>Ocho piezas, una historia <span>en movimiento.</span></h2><p class="section-lead">Activa cada pieza para revelar una parte del recorrido.</p></div>
+      <div id="identity-puzzle" class="identity-puzzle" aria-label="Rompecabezas interactivo de ocho temas"></div>
+      <p id="puzzle-message" class="puzzle-message" aria-live="polite">Elige una pieza para comenzar a reunir tu historia.</p>
+      <p id="puzzle-reveal" class="puzzle-reveal" hidden>Mi identidad se construye a partir de quién soy, lo que vivo, lo que aprendo y las decisiones que tomo.</p>
+    </section>
+    <section class="reflection-workspace">
+      <div class="reflection-prompt">
+        <p class="eyebrow">EL ESPEJO DE MI IDENTIDAD</p>
+        <h2>Una conversación <span>contigo.</span></h2>
+        <p>Completa las frases que te hagan sentido. Puedes volver a editarlas cuando quieras.</p>
+        <div class="mirror-question"><span aria-hidden="true">✦</span><p>Si dejaras de lado por un momento las expectativas de los demás, ¿qué persona elegirías ser?</p></div>
+      </div>
+      <form id="commitment-form" class="commitment-form">
+        <label for="discovery">Hoy descubrí que soy...<textarea id="discovery" name="discovery" rows="2" maxlength="500" placeholder="Una cualidad, una pregunta, una posibilidad..."></textarea></label>
+        <label for="self-worth">Algo que valoro de mí es...<textarea id="self-worth" name="selfWorth" rows="2" maxlength="500" placeholder="Algo que a veces olvidas reconocer..."></textarea></label>
+        <label for="influence">Una influencia que quiero aprender a manejar es...<textarea id="influence" name="influence" rows="2" maxlength="500" placeholder="Puedes pensar en vínculos, redes o expectativas..."></textarea></label>
+        <label for="decision">Una decisión que quiero tomar por mí mismo/a es...<textarea id="decision" name="decision" rows="2" maxlength="500" placeholder="Una decisión pequeña también cuenta..."></textarea></label>
+        <label for="happiness">Para construir mi felicidad necesito...<textarea id="happiness" name="happiness" rows="2" maxlength="500" placeholder="¿Qué te acerca a una vida con sentido?"></textarea></label>
+        <div class="form-actions"><button class="button button-primary" type="submit">Guardar mi compromiso <span aria-hidden="true">→</span></button><span id="save-status" class="save-status" aria-live="polite"></span></div>
+      </form>
+    </section>
+    <section class="commitment-box">
+      <div class="commitment-box-heading"><span class="commitment-icon" aria-hidden="true">✧</span><div><p class="eyebrow eyebrow-dark">CAJA VIRTUAL DE COMPROMISOS</p><h2>Un recordatorio para tu yo futuro.</h2></div></div>
+      <div id="saved-commitment" class="saved-commitment"><p>Todavía no has guardado un compromiso. Cuando estés listo/a, tus palabras aparecerán aquí.</p></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="index.html">CORE 1 <span>·</span> PERSONA Y AUTOCONOCIMIENTO</a><p>Lo que escribes es privado y se guarda únicamente en este navegador.</p><a href="recursos.html">Volver a los recursos</a></footer>
+</body>
+</html>
